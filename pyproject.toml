@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sens-cli"
+version = "3.0.0"
+description = "Evrensel FPS Sens Çevirici — Oyunlar arası fare hassasiyeti dönüşüm aracı"
+readme = "Yeni Metin Belgesi.md"
+authors = [
+    {name = "GameSens Generator Contributors"},
+]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+keywords = ["fps", "sensitivity", "converter", "cm/360", "gaming"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Games/Entertainment :: First Person Shooters",
+]
+
+[project.urls]
+Homepage = "https://github.com/GameSens/sens-cli"
+Source = "https://github.com/GameSens/sens-cli"
+
+[project.scripts]
+sens-cli = "sens_cli.cli:main"
+sens-gui = "gui:main"
+
+[project.optional-dependencies]
+gui = ["customtkinter>=5.0"]
+
+[tool.setuptools.packages.find]
+include = ["sens_cli*"]
