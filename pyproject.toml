@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "sens-cli"
 version = "3.0.0"
 description = "Evrensel FPS Sens Çevirici — Oyunlar arası fare hassasiyeti dönüşüm aracı"
-readme = "Yeni Metin Belgesi.md"
+readme = "readme.md"
 authors = [
     {name = "GameSens Generator Contributors"},
 ]
@@ -34,6 +34,10 @@ sens-gui = "gui:main"
 
 [project.optional-dependencies]
 gui = ["customtkinter>=5.0"]
+test = ["pytest>=7.0"]
+
+[tool.setuptools]
+py-modules = ["gui"]
 
 [tool.setuptools.packages.find]
 include = ["sens_cli*"]

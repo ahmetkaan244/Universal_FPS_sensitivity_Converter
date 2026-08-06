@@ -14,12 +14,18 @@ from sens_cli.constants import GAMES, get_game, list_games
 class TestGameDatabase:
     """GAMES veritabani yapisal tutarlilik."""
 
-    def test_four_games_supported(self):
-        assert set(GAMES.keys()) == {"cs2", "valorant", "pubg", "arena_breakout"}
+    def test_eighteen_games_supported(self):
+        assert set(GAMES.keys()) == {
+            "cs2", "valorant", "pubg", "arena_breakout",
+            "apex_legends", "overwatch_2", "call_of_duty_serisi", "the_finals",
+            "marvel_rivals", "deadlock", "rainbow_six_siege", "fortnite",
+            "battlefield_2042", "halo_infinite", "destiny_2",
+            "escape_from_tarkov", "rust", "team_fortress_2",
+        }
 
     def test_all_games_listable(self):
         games = list_games()
-        assert len(games) == 4
+        assert len(games) == 18
         assert games == sorted(games)
 
     def test_cs2_yaw_matches_source_engine(self):
@@ -27,6 +33,28 @@ class TestGameDatabase:
 
     def test_valorant_yaw_matches_ue4(self):
         assert get_game("valorant").yaw == 0.07
+
+    @pytest.mark.parametrize(
+        "key,expected_yaw",
+        [
+            ("apex_legends", 0.022),
+            ("overwatch_2", 0.0066),
+            ("call_of_duty_serisi", 0.0066),
+            ("the_finals", 0.0066),
+            ("marvel_rivals", 0.0066),
+            ("deadlock", 0.044),
+            ("rainbow_six_siege", 0.00573),
+            ("fortnite", 0.005555),
+            ("battlefield_2042", 0.0066),
+            ("halo_infinite", 0.022),
+            ("destiny_2", 0.0066),
+            ("escape_from_tarkov", 0.125),
+            ("rust", 0.222),
+            ("team_fortress_2", 0.022),
+        ],
+    )
+    def test_new_game_yaw_values(self, key, expected_yaw):
+        assert get_game(key).yaw == pytest.approx(expected_yaw)
 
     def test_every_game_has_scopes(self):
         for key, game in GAMES.items():

@@ -120,6 +120,165 @@ GAMES: dict[str, GameDef] = {
             ScopeDef(id="4x", name="4x Dürbün", fov=24.0),
         ],
     ),
+
+    "apex_legends": GameDef(
+        name="Apex Legends",
+        yaw=0.022,
+        hipfire_fov=90.0,
+        sens_min=0.1,
+        sens_max=8.0,
+        scopes=[
+            ScopeDef(id="ads", name="ADS (Nişangah)", fov=60.0),
+        ],
+    ),
+
+    "overwatch_2": GameDef(
+        name="Overwatch 2",
+        yaw=0.0066,
+        hipfire_fov=103.0,
+        sens_min=1,
+        sens_max=100,
+        scopes=[
+            ScopeDef(id="scope", name="Keskin Nişancı (Widowmaker/Ana)", fov=51.0),
+        ],
+    ),
+
+    "call_of_duty_serisi": GameDef(
+        name="Call of Duty Serisi",
+        yaw=0.0066,
+        hipfire_fov=100.0,
+        sens_min=0.1,
+        sens_max=20,
+        scopes=[
+            ScopeDef(id="ads", name="ADS (Nişan)", fov=66.0),
+        ],
+    ),
+
+    "the_finals": GameDef(
+        name="The Finals",
+        yaw=0.0066,
+        hipfire_fov=100.0,
+        sens_min=1,
+        sens_max=100,
+        scopes=[
+            ScopeDef(id="ads", name="ADS (Nişan)", fov=65.0),
+        ],
+    ),
+
+    "marvel_rivals": GameDef(
+        name="Marvel Rivals",
+        yaw=0.0066,
+        hipfire_fov=103.0,
+        sens_min=1,
+        sens_max=100,
+        scopes=[
+            ScopeDef(id="scope", name="Nişan (Keskin Nişancı Kahramanlar)", fov=51.0),
+        ],
+    ),
+
+    "deadlock": GameDef(
+        name="Deadlock",
+        yaw=0.044,
+        hipfire_fov=90.0,
+        sens_min=0.1,
+        sens_max=10,
+        scopes=[
+            ScopeDef(id="ads", name="ADS (Yakınlaştırma)", fov=60.0),
+        ],
+    ),
+
+    "rainbow_six_siege": GameDef(
+        name="Rainbow Six Siege",
+        yaw=0.00573,
+        hipfire_fov=60.0,
+        sens_min=1,
+        sens_max=100,
+        scopes=[
+            ScopeDef(id="ads1x", name="ADS 1x (Holo/Refleks)", fov=50.0),
+            ScopeDef(id="acog", name="ACOG 2.5x", fov=35.0),
+        ],
+    ),
+
+    "fortnite": GameDef(
+        name="Fortnite",
+        yaw=0.005555,
+        hipfire_fov=80.0,
+        sens_min=0.01,
+        sens_max=1.0,
+        scopes=[
+            ScopeDef(id="ads", name="ADS (Tüfek)", fov=65.0),
+            ScopeDef(id="scope", name="Dürbünlü Tüfek", fov=40.0),
+        ],
+    ),
+
+    "battlefield_2042": GameDef(
+        name="Battlefield 2042",
+        yaw=0.0066,
+        hipfire_fov=90.0,
+        sens_min=1,
+        sens_max=100,
+        scopes=[
+            ScopeDef(id="ads", name="ADS 1x", fov=60.0),
+            ScopeDef(id="scope4x", name="4x Dürbün", fov=30.0),
+        ],
+    ),
+
+    "halo_infinite": GameDef(
+        name="Halo Infinite",
+        yaw=0.022,
+        hipfire_fov=78.0,
+        sens_min=1,
+        sens_max=20,
+        scopes=[
+            ScopeDef(id="zoom", name="Yakınlaştırma (BR/Snapper)", fov=50.0),
+        ],
+    ),
+
+    "destiny_2": GameDef(
+        name="Destiny 2",
+        yaw=0.0066,
+        hipfire_fov=105.0,
+        sens_min=1,
+        sens_max=20,
+        scopes=[
+            ScopeDef(id="ads", name="ADS", fov=70.0),
+            ScopeDef(id="sniper", name="Keskin Nişancı", fov=40.0),
+        ],
+    ),
+
+    "escape_from_tarkov": GameDef(
+        name="Escape From Tarkov",
+        yaw=0.125,
+        hipfire_fov=50.0,
+        sens_min=0.1,
+        sens_max=2.0,
+        scopes=[
+            ScopeDef(id="ads1x", name="ADS 1x Nişangah", fov=44.0),
+            ScopeDef(id="scope4x", name="4x Dürbün", fov=20.0),
+        ],
+    ),
+
+    "rust": GameDef(
+        name="Rust",
+        yaw=0.222,
+        hipfire_fov=75.0,
+        sens_min=0.01,
+        sens_max=1.0,
+        scopes=[
+            ScopeDef(id="scope8x", name="8x Dürbün", fov=25.0),
+        ],
+    ),
+
+    "team_fortress_2": GameDef(
+        name="Team Fortress 2",
+        yaw=0.022,
+        hipfire_fov=90.0,
+        sens_min=0.01,
+        sens_max=20,
+        scopes=[
+            ScopeDef(id="scope", name="Keskin Nişancı Dürbünü", fov=60.0),
+        ],
+    ),
 }
 
 # PUBG için içsel çarpan dönüşüm sabiti

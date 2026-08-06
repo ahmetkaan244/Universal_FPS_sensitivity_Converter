@@ -20,6 +20,16 @@ from .core import convert_sensitivity
 from .scopes import calculate_scopes
 
 
+def _enable_utf8_console() -> None:
+    """Windows konsolunda Turkce karakterlerin bozuk cikmamasi icin UTF-8 ayarlar."""
+    if sys.platform == "win32":
+        for stream in (sys.stdout, sys.stderr):
+            try:
+                stream.reconfigure(encoding="utf-8", errors="replace")
+            except (AttributeError, ValueError):
+                pass
+
+
 def _fmt(val: bool) -> str:
     return "[+]" if val else "[-]"
 
@@ -221,6 +231,7 @@ def _create_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     """CLI giris noktasi."""
+    _enable_utf8_console()
     parser = _create_parser()
     args = parser.parse_args()
 
