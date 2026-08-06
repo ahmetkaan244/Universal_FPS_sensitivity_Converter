@@ -7,7 +7,7 @@ CS2, Valorant, PUBG ve Arena Breakout arasında hassasiyetinizi fiziksel bir ref
 MDM (Monitor Distance Match) hesabı dahildir.
 
 ---
-![Ana Menü](https://githubusercontent.com)
+![Ana Menü](https://github.com/ahmetkaan244/Universal_FPS_sensitivity_Converter/blob/main/mainmenu.png)
 
 
 ---
