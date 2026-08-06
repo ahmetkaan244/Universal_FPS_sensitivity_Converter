@@ -2,7 +2,7 @@
 
 **Evrensel FPS Sens Çevirici** — Oyunlar arası fare hassasiyeti (sensitivite) dönüşüm aracı.
 
-CS2, Valorant, PUBG ve Arena Breakout arasında hassasiyetinizi fiziksel bir referansa
+CS2, Valorant, PUBG ve Arena Breakout gibi oyunlarda hassasiyetinizi fiziksel bir referansa
 (cm/360) sabitleyerek tutarlı şekilde aktarın. Dürbün (scope/zoom) ayarları için
 MDM (Monitor Distance Match) hesabı dahildir.
 
